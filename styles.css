@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url(hh.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-left: 150px;
+}
+.menu a, .social-icon {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    font-size: 20px;
+    position: relative;
+}
+.menu a::before, .social-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid indianred;
+    transition: 0.4s linear;
+}
+.menu a:hover::before, .social-icon:hover::before {
+    width: 90%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding:10px 20px;
+    font-size: 20px;
+    background: indianred;
+    border-radius: 8px;
+    transition: 0.4s;
+    margin-right: 40px ;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.h-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+.h-txt span{
+    letter-spacing: 3px;
+}
+.h-txt h1{
+    font-size: 3.8rem;
+    margin-top: 30px;
+}
+.h-txt a{
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 4px;
+    transition: 0.4s;
+}
+.h-txt a:hover{
+    background: transparent;
+    border: 4px solid indianred;
+    margin-bottom: 20px;
+}
